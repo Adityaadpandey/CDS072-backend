@@ -31,7 +31,7 @@ const model = genAI.getGenerativeModel({
       history: [],
     });
   
-    const result = await chatSession.sendMessage("problem: i am getting bad quality of food from the train vendors");
+    const result = await chatSession.sendMessage(prob);
     return result.response.text()
     
   }
@@ -49,7 +49,7 @@ const add = async (req, res) => {
             contact,
 
         } = req.body;
-        const solutionbyai = await run({prob:content});
+        const solutionbyai = await run(content);
         // If there are errors, return Bad request and the errors
         const errors = validationResult(req);
         if (!errors.isEmpty()) {
