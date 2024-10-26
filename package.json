@@ -1,0 +1,22 @@
+{
+  "name": "backend-rail-cms",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "express-validator": "^7.2.0",
+    "mongoose": "^8.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
