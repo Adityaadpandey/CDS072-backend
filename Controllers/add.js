@@ -13,7 +13,7 @@ const genAI = new GoogleGenerativeAI(apiKey);
 
 const model = genAI.getGenerativeModel({
     model: "gemini-1.5-flash",
-    systemInstruction: "the problem statement i am giving is from the someone who is travelling through train and want to complain the system they are facing and i want to give you two things that is first that the problem is genuine or not by just yes or no and the solution you can give according to you to someone who is having authority in simple words and give them in json format {genuine:\" \",solution:\"\"} make it plain don't use markdown to look it good and really plain not even the \n for new line or something so that i can use it my api backend and access it easily",
+    systemInstruction: "the problem statement i am giving is from the someone who is travelling through train and want to complain the system they are facing and i want to give you two things that is first that the problem is genuine or not by just yes or no and the solution you can give according to you to someone who is having authority in simple words and give them in json format {genuine:\" \",solution:\"\"} make it plain don't use markdown to look it good and really plain not even the \n and not even \ also for new line or something so that i can use it my api backend and access it easily",
   });
   
   
